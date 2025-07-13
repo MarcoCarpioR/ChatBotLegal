@@ -1,11 +1,10 @@
 import streamlit as st
 import faiss
-import pickle
 import numpy as np
-from sentence_transformers import SentenceTransformer
+import pickle
 import google.generativeai as genai
 
-# Configurar clave de API de Gemini desde secrets
+# Configurar API Key desde secretos de Streamlit
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # Cargar índice FAISS y metadatos
@@ -13,44 +12,56 @@ genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 def cargar_index_y_datos():
     index = faiss.read_index("index_normas.faiss")
     with open("metadata.pkl", "rb") as f:
-        metadata = pickle.load(f)  # Lista de strings
+        metadata = pickle.load(f)
     return index, metadata
 
-# Cargar modelo de embeddings
+# Obtener embedding desde Gemini
 @st.cache_resource
 def cargar_modelo_embeddings():
-    return SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+    modelo = genai.GenerativeModel("embedding-001")
+    return modelo
 
-# Generar respuesta con Gemini
+# Generar respuesta con Gemini Pro
 def generar_respuesta(pregunta, contexto):
-    prompt = f"""Eres un asistente legal experto en normativas peruanas para habilitación de consultorios dentales. Usa únicamente el contexto proporcionado. Sé claro, preciso y profesional.\n
-    Pregunta: {pregunta}\n
-    Contexto:\n{contexto}\n
-    Respuesta:"""
-    
+    prompt = f"""Eres un asistente legal experto en normativa peruana para la habilitación de consultorios odontológicos.
+Responde con precisión legal usando exclusivamente el contexto provisto.
+
+Pregunta: {pregunta}
+
+Contexto normativo:
+{contexto}
+
+Respuesta:"""
     modelo = genai.GenerativeModel("gemini-1.5-flash")
     respuesta = modelo.generate_content(prompt)
     return respuesta.text.strip()
 
 # Interfaz de usuario
-st.title("🦷 ChatClínica Legal - Asistente para Consultorios Dentales")
-st.markdown("Consulta normativa legal sobre la habilitación de consultorios odontológicos en Perú (Arequipa).")
+st.title("🦷 ChatClínica Legal")
+st.markdown("Asistente legal para normativas de habilitación de consultorios odontológicos en Perú.")
 
 pregunta_usuario = st.text_input("🔍 Escribe tu pregunta legal:")
 
 if pregunta_usuario:
-    with st.spinner("Buscando en normas legales..."):
+    with st.spinner("Buscando información normativa..."):
         index, metadata = cargar_index_y_datos()
-        modelo = cargar_modelo_embeddings()
+        modelo_embed = cargar_modelo_embeddings()
 
-        # Obtener embedding de la pregunta
-        embedding = modelo.encode([pregunta_usuario]).astype("float32")
+        # Obtener embedding desde Gemini
+        embedding_response = modelo_embed.embed_content(
+            pregunta_usuario,
+            task_type="retrieval_query",
+            title="Consulta legal"
+        )
+        embedding = np.array(embedding_response.embedding, dtype="float32").reshape(1, -1)
 
-        # Buscar los 5 fragmentos más relevantes
-        _, indices = index.search(embedding, k=5)
+        # Búsqueda en FAISS
+        distancias, indices = index.search(embedding, k=5)
+
+        # Obtener contexto de los top 5 chunks
         contexto = "\n".join([metadata[i] for i in indices[0]])
 
-        # Generar respuesta
+        # Generar respuesta con contexto
         respuesta = generar_respuesta(pregunta_usuario, contexto)
 
     st.success("✅ Respuesta:")

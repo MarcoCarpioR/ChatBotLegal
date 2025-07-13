@@ -1,5 +1,5 @@
 streamlit
 faiss-cpu
-google-cloud-aiplatform>=1.38.0
-vertexai>=0.0.1a1
+sentence-transformers
+google-generativeai
 numpy

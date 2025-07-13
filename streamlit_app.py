@@ -1,18 +1,33 @@
 import streamlit as st
+import os
+import json
 import faiss
 import pickle
 import numpy as np
-from google.cloud import aiplatform
-from vertexai.preview.language_models import TextEmbeddingModel
-from vertexai.generative_models import GenerativeModel
 
-# Inicializar Vertex AI solo una vez
+# ────────────────────────
+# 1. CARGAR CREDENCIALES GCP
+# ────────────────────────
+with open("gcp_key.json", "w") as f:
+    json.dump(json.loads(st.secrets["GOOGLE_CREDENTIALS_JSON"]), f)
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_key.json"
+
+# ────────────────────────
+# 2. IMPORTAR MODELOS DE VERTEX AI
+# ────────────────────────
+from google.cloud import aiplatform
+from vertexai.generative_models import GenerativeModel
+from vertexai.preview.language_models import TextEmbeddingModel
+
 aiplatform.init(
     project=st.secrets["GCP_PROJECT"],
     location=st.secrets["GCP_REGION"]
 )
 
-# Cargar FAISS y metadatos
+# ────────────────────────
+# 3. CARGAR FAISS + METADATOS
+# ────────────────────────
 @st.cache_resource
 def cargar_index_y_datos():
     index = faiss.read_index("index_normas.faiss")
@@ -20,29 +35,33 @@ def cargar_index_y_datos():
         data = pickle.load(f)
     return index, data["textos"], data["fuentes"]
 
-# Cargar modelos Gemini desde Vertex AI
+# ────────────────────────
+# 4. CARGAR MODELOS GEMINI
+# ────────────────────────
 @st.cache_resource
 def cargar_modelos():
     embed_model = TextEmbeddingModel.from_pretrained("textembedding-gecko@001")
     chat_model = GenerativeModel("gemini-2.5-pro")
     return embed_model, chat_model
 
-# Obtener embedding de una pregunta
+# ────────────────────────
+# 5. FUNCIONES DE CONSULTA
+# ────────────────────────
 def embed_text(modelo, texto):
-    embedding_response = modelo.get_embeddings([texto])
-    vector = embedding_response[0].values
+    vector = modelo.get_embeddings([texto])[0].values
     return np.array(vector, dtype="float32").reshape(1, -1)
 
-# Buscar fragmentos más relevantes en el índice FAISS
 def buscar_contexto(pregunta, modelo_embed, index, textos, fuentes, k=1):
     vector = embed_text(modelo_embed, pregunta)
     distancias, indices = index.search(vector, k)
     resultados = [(textos[i], fuentes[i]) for i in indices[0]]
     return resultados
 
-# Interfaz Streamlit
+# ────────────────────────
+# 6. UI STREAMLIT
+# ────────────────────────
 st.title("🦷 ChatClínica Legal")
-st.markdown("Consulta normativa legal para habilitación de consultorios odontológicos en Perú.")
+st.markdown("Consulta normativa para habilitación de consultorios odontológicos en Perú.")
 
 pregunta = st.text_input("🔍 Escribe tu pregunta legal:")
 

@@ -1,71 +1,75 @@
 import streamlit as st
 import faiss
-import numpy as np
 import pickle
-import google.generativeai as genai
+import numpy as np
+from google.cloud import aiplatform
+from vertexai.generative_models import GenerativeModel
+from vertexai.preview.language_models import TextEmbeddingModel
 
-# Configurar API Key desde secretos de Streamlit
-genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+# Configuración inicial de Vertex AI
+aiplatform.init(
+    project=st.secrets["GCP_PROJECT"],
+    location=st.secrets["GCP_REGION"]
+)
 
-# Cargar índice FAISS y metadatos
+# Cargar FAISS y metadatos
 @st.cache_resource
 def cargar_index_y_datos():
     index = faiss.read_index("index_normas.faiss")
     with open("metadata.pkl", "rb") as f:
-        metadata = pickle.load(f)
-    return index, metadata
+        data = pickle.load(f)
+    return index, data["textos"], data["fuentes"]
 
-# Obtener embedding desde Gemini
+# Cargar modelos
 @st.cache_resource
-def cargar_modelo_embeddings():
-    modelo = genai.EmbeddingModel("models/embedding-001")
-    return modelo
+def cargar_modelos():
+    modelo_embed = TextEmbeddingModel.from_pretrained("gemini-embedding-001")
+    modelo_chat = GenerativeModel("gemini-2.5-pro")
+    return modelo_embed, modelo_chat
 
-# Generar respuesta con Gemini Pro
-def generar_respuesta(pregunta, contexto):
-    prompt = f"""Eres un asistente legal experto en normativa peruana para la habilitación de consultorios odontológicos.
-Responde con precisión legal usando exclusivamente el contexto provisto.
+# Obtener embedding
+def embed_text(modelo, texto):
+    embedding = modelo.get_embeddings([texto])[0].values
+    return np.array(embedding, dtype="float32").reshape(1, -1)
+
+# Buscar contexto
+def buscar_contexto(pregunta, modelo_embed, index, textos, fuentes, k=1):
+    vector = embed_text(modelo_embed, pregunta)
+    distancias, indices = index.search(vector, k)
+    resultados = [(textos[i], fuentes[i]) for i in indices[0]]
+    return resultados
+
+# Streamlit UI
+st.title("🦷 ChatClínica Legal")
+st.markdown("Asistente legal para habilitación de consultorios odontológicos en Perú.")
+
+pregunta = st.text_input("🔍 Escribe tu pregunta legal:")
+
+if pregunta:
+    with st.spinner("Buscando en normativa..."):
+        index, textos, fuentes = cargar_index_y_datos()
+        modelo_embed, modelo_chat = cargar_modelos()
+
+        fragmentos = buscar_contexto(pregunta, modelo_embed, index, textos, fuentes, k=1)
+        contexto, fuente = fragmentos[0]
+
+        prompt = f"""
+Eres un asistente legal para consultorios odontológicos en Perú.
+Responde la siguiente consulta en base a la normativa entregada.
+
+--- CONTEXTO ---
+{contexto}
+--- FIN DEL CONTEXTO ---
 
 Pregunta: {pregunta}
+Respuesta:
+"""
 
-Contexto normativo:
-{contexto}
-
-Respuesta:"""
-    modelo = genai.GenerativeModel("gemini-1.5-flash")
-    respuesta = modelo.generate_content(prompt)
-    return respuesta.text.strip()
-
-# Interfaz de usuario
-st.title("🦷 ChatClínica Legal")
-st.markdown("Asistente legal para normativas de habilitación de consultorios odontológicos en Perú.")
-
-pregunta_usuario = st.text_input("🔍 Escribe tu pregunta legal:")
-
-if pregunta_usuario:
-    with st.spinner("Buscando información normativa..."):
-        index, metadata = cargar_index_y_datos()
-        modelo_embed = cargar_modelo_embeddings()
-
-        # Obtener embedding desde Gemini
-        embedding_response = modelo_embed.embed_content(
-            pregunta_usuario,
-            task_type="retrieval_query",
-            title="Consulta legal"
-        )
-        embedding = np.array(embedding_response.embedding, dtype="float32").reshape(1, -1)
-
-        # Búsqueda en FAISS
-        distancias, indices = index.search(embedding, k=5)
-
-        # Obtener contexto de los top 5 chunks
-        contexto = "\n".join([metadata[i] for i in indices[0]])
-
-        # Generar respuesta con contexto
-        respuesta = generar_respuesta(pregunta_usuario, contexto)
+        respuesta = modelo_chat.generate_content(prompt).text.strip()
 
     st.success("✅ Respuesta:")
     st.write(respuesta)
+    st.info(f"📁 Fuente: {fuente}")
 
-    with st.expander("📄 Fragmentos normativos utilizados"):
-        st.text(contexto)
+    with st.expander("📄 Fragmento normativo usado"):
+        st.code(contexto)

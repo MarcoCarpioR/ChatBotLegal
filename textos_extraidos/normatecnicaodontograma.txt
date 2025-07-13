@@ -1,0 +1,1099 @@
+
+
+=== PÁGINA 1 ===
+NTSN*188  -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+l, FINALIDAD
+
+Disponer de información estandarizada, contando con un instrumento técnico-legal para
+contribuir en la salud integral de la persona, familia y comunidad.
+
+ll. OBJETIVOS
+
+2.1 OBJETIVO GENERAL
+
+Mejorar el uso del odontograma en la Unidad Productora de Servicios (UPS) donde
+tenga actividad el/la cirujano dentista.
+
+2.2 OBEJTIVOS ESPECÍFICOS
+
+2.2.1. Estandarizar el gráfico y la nomenclatura básica para el registro de hallazgos
+clínicos en el odontograma, permitiendo a la comunidad de cirujanos dentistas
+manejar la misma información; y,
+
+2.2.2 Determinar los criterios para el registro de datos de las características,
+anomalías patológicas de las piezas dentarias, así como el registro de
+procedimientos estomatológicos realizados para el uso y manejo del
+odontograma en las diferentes UPS, pudiendo ser utilizados en aspectos
+clínicos, legales, forenses, estadísticos, de investigación o docencia.
+
+Ill. ÁMBITO DE APLICACIÓN
+
+La presente Norma Técnica de Salud es de aplicación obligatoria en todos los
+establecimientos de salud públicos (del Ministerio de Salud, del Seguro Social de Salud
+— EsSalud, de los Gobiernos Regionales, Gobiernos Locales, de las Sanidades de las
+Fuerzas Armadas — FFAA, de la Sanidad de la Policía Nacional del Perú -PNP, del
+Instituto Nacional Penitenciario- INPE), privados y mixtos.
+
+. BASE LEGAL
+
+Ley N” 15251, Ley de Creación del Colegio Odontológico del Perú, y sus
+modificatorias.
+
+Ley N* 26842, Ley General de Salud, y sus modificatorias.
+Ley N” 27878, Ley de Trabajo del Cirujano Dentista.
+
+Ley N” 30024, Ley que crea el Registro Nacional de Historias Clínicas Electrónicas,
+y su modificatoria.
+
++ Decreto Legislativo N” 1161, que aprueba la Ley de Organización y Funciones del
+Ministerio de Salud, y sus modificatorias.
+
+
+=== PÁGINA 2 ===
+—— NTSN* 188 -MINSAJDGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+Decreto Supremo N* 016-2005-SA, que aprueba el Reglamento de la Ley N*
+27878, Ley de Trabajo del Cirujano Dentista, y su modificatoria.
+
+Decreto Supremo N”* 013-2006-SA, que aprueba el Reglamento de
+Establecimientos de Salud y Servicios Médicos de Apoyo, y sus modificatorias.
+
+Decreto Supremo N* 039-2015-SA, que aprueba el Reglamento de la Ley N” 30024,
+Ley que crea el Registro Nacional e Historias Clínicas Electrónicas.
+
+Decreto Supremo N* 008-2017-SA, que aprueba el Reglamento de Organización y
+Funciones del Ministerio de Salud, y sus modificatorias.
+
+Resolución Ministerial N” 431-2015/MINSA, que aprueba el Documento Técnico:
+"Política de Seguridad de la Información del Ministerio de Salud — MINSA".
+
+Resolución Ministerial N” 978-2016/MINSA, que aprueba la Directiva Administrativa
+N* 221-MINSA/2016/0GTI “Directiva Administrativa que autoriza el uso de la firma
+digital en los actos médicos y actos de salud".
+
+Resolución Ministerial N* 422-2017/MINSA, que aprueba la Guía Técnica: Guía de
+Práctica Clínica para la Prevención, Diagnóstico y Tratamiento de la Caries Dental
+en Niñas y Niños.
+
+Resolución Ministerial N* 1069-2017/MINSA, que aprueba la Directiva
+Administrativa N” 242-MINSA/2017/DGAIN "Directiva Administrativa que establece
+la Cartera de Atención de Salud en los establecimientos de salud del primer nivel
+de atención”.
+
+Resolución Ministerial N” 214-2018/MINSA, que aprueba la NTS N” 139-
+MINSA/2018/DGAIN: “Norma Técnica de Salud para la Gestión de la Historia
+Clínica”, y sus modificatorias.
+
+DISPOSICIONES GENERALES
+DEFINICIONES OPERATIVAS
+
+Para efectos de la presente Norma Técnica de Salud, se adoptan las siguientes
+definiciones:
+
+1) AMALGAMA DENTAL: Aleación usada en restauraciones dentales directas.
+
+Compuesta de mercurio, limadura de plata, junto con otros elementos metálicos
+añadidos mejoran sus propiedades físicas y mecánicas '
+
+2) CORONA: Es el reemplazo artificial de la corona clínica sustituyendo la estructura
+
+de la pieza dentaria que falta, colocada, rodeando la estructura coronal restante, o
+para ser colocado sobre un implante dental. '
+
+3) CORONA CLÍNICA: Porción del diente no cubierta por tejido blando, la cubre el
+
+esmalte dental y se encuentra expuesta a la cavidad bucal.?
+
+4) CORONA TEMPORAL: Hace mención a una corona artificial de material provisional
+
+que se coloca sobre un diente dañado como dispositivo de protección inmediata. *
+
+5) DIASTEMA: Espacio entre 2 dientes adyacentes en el mismo arco dental.*
+
+
+=== PÁGINA 3 ===
+NTS N*188 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+6) EDÉNTULO TOTAL: Pérdida total los dientes deciduos y/o permanentes ya sea
+del maxilar superior, del maxilar inferior o de ambos maxilares.'
+
+7) ESPIGO - MUÑÓN: Dispositivo similar a un vástago, el cual es diseñado para ser
+colocado en el espacio del canal radicular preparado de la pieza dentaria con la
+finalidad de proporcionar mayor soporte estructural para una posterior
+rehabilitación.
+
+8) FRACTURA DENTAL: Ruptura que genera una discontinuidad en la pieza
+dentaria; la etiología es variada.
+
+9) FUSIÓN: Es la unión entre la dentina y/o esmalte de 2 o más piezas dentarias
+desarrollados separadamente. Radiográficamente, se observan 2 piezas
+dentarias con 2 coronas, 2 raíces y 2 canales radiculares.
+
+10) GEMINACIÓN: Es la división de un germen dentario en 2. Radiográficamente, las
+geminaciones se presentan con una raíz y un canal radicular, pero con 2 coronas
+y 2 cámaras pulpares.
+
+11) GIROVERSIÓN: Rotación de una pieza dentaria sobre su eje longitudinal.
+
+12) IMPACTACIÓN: Pieza dentaria que no erupcionó en su totalidad por alguna
+barrera física interpuesta durante la erupción.
+
+13) IMPLANTE DENTAL: Dispositivo mecánico que es colocado en el hueso a través
+de él, para sustituir una o más piezas dentarias.
+
+14) INCRUSTACIÓN: Restauración que consiste en el reemplazo parcial de la corona
+de una pieza dentaria en exacta correspondencia con la cavidad tallada por el
+cirujano dentista.
+
+15) IONÓMERO DE VIDRIO: Material odontológico resultante de la mezcla de polvo
+de vidrio de aluminosilicatos conteniendo fluoruro y ácido carboxílico polimérico;
+tiene múltiples usos.
+
+16) LESIÓN DE CARIES DENTAL: Disolución química de la superficie dentaria
+producto de la interacción entre la biopelícula (placa dental) conformada por
+depósitos microbianos en la superficie dentaria, manifestándose con la presencia
+de una superficie dental, la cual puede evidenciarse como lesión cavitada o no
+cavitada.
+
+17) MACRODONCIA: Hallazgo clínico donde se identifica una o múltiples piezas
+dentarias de mayor tamaño comparado con las dimensiones estándar promedio,
+atribuido a la herencia y/o a causas idiopáticas.
+
+18) MICRODONCIA: Hallazgo clínico donde se identifica una o múltiples piezas
+
+dentarias de menor tamaño comparado con las dimensiones estándar promedio,
+Atribuido a la herencia y/o a causas idiopáticas
+
+19) MOVILIDAD PATOLÓGICA: Movimiento de una pieza dentaria en su alveolo
+resultante de una fuerza aplicada.
+
+20) PIEZA DENTARIA AUSENTE: Pieza dentaria que no se encuentra presente
+clinicamente en la boca.
+
+21) PIEZA DENTARIA ECTÓPICA: Pieza dentaria que ha erupcionado fuera del
+lugar que le corresponde.
+
+22) PIEZA DENTARIA EN ERUPCIÓN: Pieza dentaria en proceso de erupción según
+cronología dentaria y que se evidencia clínicamente
+
+
+=== PÁGINA 4 ===
+NTSN*188 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+23) PIEZA DENTARIA SUPERNUMERARIA: Anomalía de número, consiste en el
+aumento del número de piezas dentarias que normalmente se presentan en el
+arco dentario. La(s) pieza(s) dentaria(s) puede(n) encontrarse erupcionada(s) o
+no erupcionada(s).
+
+24) PRÓTESIS DENTAL PARCIAL FIJA: Aditamento que sustituye los dientes
+perdidos o ausentes con coronas o restauraciones cementadas sobre pilares.
+
+25) PRÓTESIS DENTAL PARCIAL REMOVIBLE: Aditamento que sustituye las
+zonas de las piezas dentarias pérdidas o ausentes, pudiendo ser retirado y
+repuesto en su lugar por el paciente.
+
+26) PRÓTESIS DENTAL COMPLETA MAXILAR: Aditamento que sustituye todas las
+piezas dentarias pérdidas o ausentes del maxilar superior.
+
+27) PRÓTESIS DENTAL COMPLETA MANDIBULAR: Aditamento que sustituye
+todas las piezas dentarias pérdidas o ausentes del maxilar inferior.
+
+28) PULPECTOMÍA: Remoción completa del tejido de la pulpa vital o no vital del
+espacio coronal y del canal radicular en dentición decidua.
+
+29) PULPOTOMÍA: Remoción parcial únicamente de la pulpa coronal con la finalidad
+de mantener la vitalidad pulpar de la porción remanente (pulpa radicular) en
+dentición decidua.
+
+30) REMANENTE RADICULAR: Fragmento radicular que se encuentra en el alveolo
+dentario.
+
+31) RESINA COMPUESTA: Material restaurador estético compuesto por una matriz
+orgánica, un relleno inorgánico y un agente de unión entre ellos.
+
+32) SELLANTE: Material resinoso o ionomérico aplicado en las superficies oclusales
+de los dientes posteriores para la prevención de la caries dental.
+
+33) RESTAURACIÓN: Procedimiento que consiste en la reconstrucción de una
+porción del diente o de toda la corona que puede estar destruida, fracturada,
+desgastada o afectada irreversiblemente.
+
+34) SUPERFICIE DESGASTADA: Es toda superficie con pérdida de estructura
+dentaria producida de forma gradual.
+
+35) TRANSPOSICIÓN DENTARIA: Hace referencia a un intercambio en la posición
+de 2 piezas dentarias adyacentes dentro del mismo cuadrante del arco dentario.
+
+36) TRATAMIENTO DE CONDUCTOS: El tratamiento de conducto (endodoncia) es
+un procedimiento dental que se utiliza para tratar procesos infecciosos o no
+infecciosos al interior del conducto radicular de la pieza dentaria.
+
+37) URGENCIA ESTOMATOLÓGICA: Es toda atención que se enfoca en el manejo
+de afecciones que requieren atención inmediata para aliviar el dolor intenso y / o
+el riesgo de infección.
+
+) 5.2 El odontograma forma parte de la Ficha Odonto-Estomatológica o la que haga sus
+veces según la NTS N” 139/MINSA/2018, "Norma Técnica de Salud para la Gestión
+de la Historia Clínica”, aprobada por Resolución Ministerial N” 214-2018/MINSA o
+la que haga sus veces, y se encuentra contenida en la histórica clínica.
+
+5.3 El registro de los datos consignados en el odontograma es responsabilidad del/de
+la cirujano dentista, quien firma y sella la Ficha Odonto-Estomatológica o la que
+haga sus veces según normativa vigente.
+
+
+=== PÁGINA 5 ===
+5.4
+
+5.5
+
+5.6
+
+5.7
+
+5.8
+
+5.9
+
+5.10
+
+-— NTSN180 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+El sistema numérico para el odontograma debe ser el "Sistema Dígito Dos" o
+"Binario" propuesto por la Federación Dental Internacional y aceptada por la
+Organización Mundial de la Salud.
+
+El registro de los datos en el odontograma debe hacerse de manera clara, precisa
+e indubitable, evitando registros subjetivos que causen confusión.
+
+El odontograma es desarrollado individualmente para cada paciente. Todo hallazgo
+clínico registrado es inalterable, sin enmendaduras, ni tachaduras.
+
+Excepcionalmente, en los casos de urgencias estomatológicas, donde no se pueda
+realizar el odontograma de forma completa, se registran en la historia clínica los
+procedimientos realizados. El registro del odontograma se realiza en la próxima
+atención.
+
+En el odontograma únicamente se registran los hallazgos clínicos observados, más
+no los procedimientos estomatológicos a desarrollar según el plan de tratamiento.
+Estos se registran en la Ficha Odonto-Estomatológica o la que haga sus veces.
+
+Cada registro realizado en el odontograma debe respetar la ubicación y forma de
+los hallazgos clínicos.
+
+Se debe realizar el odontograma cuando se inicia el plan de tratamiento, se
+evidencian nuevos hallazgos clínicos, se culmina el plan de tratamiento y a solicitud
+de procesos judiciales y personales.
+
+Una vez culminado el plan de tratamiento, en caso que el/la paciente reingrese a la
+UPS donde tenga actividad ella cirujano dentista, se genera un nuevo
+odontograma.
+
+En los recuadros ubicados en la parte superior e inferior de la representación gráfica
+de las piezas dentarias, se registran las siglas en color azul cuando el hallazgo
+clínico se encuentre en buen estado o sea una característica no patológica; y, en
+color rojo cuando se encuentre en mal estado, sea temporal o existan
+características patológicas.
+
+Para graficar los hallazgos clínicos en el odontograma, sólo se deben utilizar los
+colores rojo y azul. El color azul indica un hallazgo clínico que se encuentra en buen
+estado y el color rojo indica un hallazgo clínico en mal estado, temporal o
+características patológicas.
+
+En el ítem especificaciones del odontograma se registran los hallazgos o
+características clínicas adicionales que presenten las piezas dentarias, y que por la
+falta de espacio no puedan ser registrados en los recuadros ubicados en la parte
+superior e inferior de la representación gráfica de las piezas dentarias del
+odontograma.
+
+En el ¡tem observaciones del odontograma se describen los hallazgos clínicos que
+no se encuentren contemplados en la nomenclatura del registro del odontograma.
+
+En caso que una pieza dentaria presente más de un hallazgo o característica
+clínica, se registran en los recuadros ubicados en la parte superior e inferior de la
+representación gráfica de las piezas dentarias del odontograma.
+
+El gráfico del odontograma establecido en la presente Norma Técnica de Salud
+reemplaza los modelos anteriores, es único y se imprime en color negro, con las
+siguientes dimensiones: La corona tiene como mínimo 0.5 cm cuadrados y la raíz
+es proporcional a esta.
+
+
+=== PÁGINA 6 ===
+NTSN*1B8 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+5.18 El gráfico del odontograma electrónico debe cumplir con lo que establece la
+presente Norma Técnica de Salud.
+VI. DISPOSICIONES ESPECÍFICAS
+
+6.1 El registro de los hallazgos clínicos se realiza a través de la siguiente nomenclatura:
+
+6.1.1 APARATO ORTODÓNTICO FIJO
+
+Se dibujan cuadrados con una cruz en su interior, a nivel de los ápices de las piezas
+dentarias que correspondan a los extremos del aparato ortodóntico, uniendo ambos
+cuadrados con una línea recta.
+
+El dibujo es en color azul cuando el aparato se encuentra en buen estado, y en color
+rojo cuando se encuentra en mal estado.
+
+14 13 12 11 21 22 23
+
+as A ADORO den
+
+6.1.2 APARATO ORTODÓNTICO REMOVIBLE
+
+Se dibuja una línea en zig - zag de color azul a la altura de los ápices de las piezas
+dentarias del maxilar en tratamiento. La linea es de color azul cuando se encuentra
+en buen estado y de color rojo cuando se encuentra en mal estado.
+
+18 17 16 15 14 13 12 11 21 22 23 24 25 26 27 28
+
+6.1.3 CORONA
+
+Se dibuja un cuadrado bordeando la corona clínica de la pieza dentaria en color azul,
+si se encuentra en buen estado, o en rojo si se encuentra en mal estado. En el
+recuadro correspondiente se anotan en mayúsculas las siglas que describen el tipo
+de corona en color azul, de encontrarse en buen estado, o en rojo, de estar en mal
+estado.
+
+
+=== PÁGINA 7 ===
+NTSN* 188 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+En el ítem especificaciones del odontograma se registra el color del metal de la
+corona, dorada o plateada, o cualquier característica clínica adicional del hallazgo
+clínico,
+
++  Enelrecuadro se consignan las siglas del tipo de corona:
+
+CM: — Corona Metálica (Corona elaborada sólo con material metálico).
+
+CF: — Corona Fenestrada, corona metálica con ventana vestibular,
+
+CMC: Corona Metal Cerámica (Corona con núcleo metálico y revestimiento de
+material estético).
+
+CV: Corona Veneer (corona completa metálica con frente estético).
+
+CLM: Corona libre de metal con núcleo y revestimiento de material
+estético, puede ser de un solo material o mixta.
+
+A
+
+6.1.4 CORONA TEMPORAL
+
+Se dibuja un cuadrado de color rojo que encierre la corona de la pieza dentaria que
+presente el tratamiento. Se colocan en mayúscula y en color rojo las siglas CT en
+el recuadro correspondiente al hallazgo clínico.
+
+En el ¡tem especificaciones del odontograma, se coloca la característica o material
+utilizado, así como cualquier característica adicional.
+
+6.1.5 DEFECTOS DE DESARROLLO DEL ESMALTE (DDE)
+
+Se colocan en el recuadro correspondiente en mayúscula y en color rojo las siglas
+del hallazgo clínico identificado en la(s)superficie(s) dentaria(s).
+
+
+=== PÁGINA 8 ===
+NTSN>1BB -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+O: Opacidades del esmalte.
+PE: Pigmentación del esmalte.
+1
+
+Fluorosis: Se detalla en el item especificaciones 16 15
+por ser una característica clínica generalizada
+acompañada de la clasificación utilizada.
+
+6.1.6 DIASTEMA
+
+Se dibuja el signo del paréntesis invertido de color azul entre las piezas dentarias
+que presenten esta característica clínica.
+
+LLL
+
+12 11 21 22
+
+EE
+
+6.1.7 EDÉNTULO TOTAL SUPERIOR / INFERIOR
+
+Se dibuja una línea recta horizontal de color azul sobre las coronas de las piezas
+dentarias ausentes del maxilar edéntulo, ya sea del maxilar superior y/o maxilar
+inferior.
+
+18 (17 16 15 14 13 12 11 21 22 23 24 25 26 27 28
+
+A A A ad A dl
+
+uy,
+YA E AAA
+
+
+=== PÁGINA 9 ===
+NTSNAIBB -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+6.1.8 ESPIGO — MUÑÓN
+
+Se dibuja de color azul, una linea vertical en la raíz unida a un cuadrado en la
+corona. Si el tratamiento está en mal estado, se dibuja la línea de color rojo.
+
+Sólo se registra este tratamiento cuando se observe clínicamente la presencia del
+
+espigo muñón.
+
+25 26 27
+
+6.1.9 FOSAS Y FISURAS PROFUNDAS
+
+Se colocan, en el recuadro correspondiente a la pieza dentaria en mayúscula y de
+color azul, la sigla "FFP” para determinar la presencia de la característica clínica
+
+mencionada.
+28
+
+26 27
+
+6.1,10 FRACTURA DENTAL
+
+Se dibuja una linea de color rojo representando la fractura sobre la figura de la
+corona y/o la raíz, según sea el caso.
+
+LL]
+
+13 12 11
+
+
+
+=== PÁGINA 10 ===
+NTSN*188 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+6.1.11 FUSIÓN
+
+Se dibujan 2 circunferencias interceptadas de color azul, encerrando los números
+que corresponden a las piezas dentarias que presentan dicha caracteristica clínica.
+
+6.1.12 GEMINACIÓN
+
+Se dibuja una circunferencia de color azul encerrando el número que corresponde
+a la pieza dentaria que presenta dicha caracteristica clínica.
+
+ERA
+
+Se dibuja una flecha curva de color azul siguiendo el sentido de la giroversión a
+nivel de la zona oclusal.
+
+6.1.13 GIROVERSIÓN
+
+10
+
+
+=== PÁGINA 11 ===
+NTSN*188 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+6.1.14 IMPACTACIÓN
+
+Se registra en mayúscula y de color azul la sigla *l”, en el recuadro correspondiente
+a la pieza dentaria que presenta esta caracteristica clínica.
+
+Sólo se registra si se observa la pieza dentaria o parte de la pieza dentaria en
+
+boca.
+36 37 38
+6.115 IMPLANTE DENTAL
+
+Se registran en mayúscula de color azul (buen estado) o rojo (mal estado) las
+siglas "IMP" en el recuadro correspondiente a la pieza dentaria o las piezas
+dentarias reemplazadas.
+
+Sólo se registra este tratamiento cuando se observe clínicamente la presencia del
+
+implante dental.
+25
+
+26 27
+
+E
+
+6.1.16 LESIÓN DE CARIES DENTAL
+Se dibuja la lesión de caries dental según la forma en la que se observa, siendo
+
+pintada de color rojo, Asimismo, se colocan en mayúscula y de color rojo las siglas
+del hallazgo clínico en el recuadro correspondiente.
+
+MB: Mancha Blanca. ]
+CE: Lesión de Caries dental a nivel del esmalte. CD CE
+CD: Lesión de Caries dental a nivel de la dentina To
+
+CDP: Lesión de Caries dental a nivel de la ar
+
+dentina/compromiso de la pulpa. Y Y Y
+1
+
+
+=== PÁGINA 12 ===
+-— NTSN* 188 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+6.1.17 MACRODONCIA
+
+Se registra en mayúscula y de color azul la sigla "MAC”, en el recuadro que
+corresponde a la pieza dentaria que presenta esta caracteristica clínica.
+
+ue]
+
+17 16 15
+
+peta
+
+Se registra en mayúscula y de color azul la sigla "MIC" en el recuadro que
+corresponde a la pieza dentaria que presenta esta característica clínica.
+
+| me
+
+24 25 26
+
+,
+
+ni
+A
+,
+
+6.1.18 MICRODONCIA
+
+6.1.19 MOVILIDAD PATOLÓGICA
+Se registra en mayúscula y de color rojo, la sigla "M” seguida del número arábigo
+
+que representa el grado de movilidad dentaria en el recuadro correspondiente a la
+pieza dentaria que presenta esta característica clínica.
+
+47 46 45
+
+00
+
+
+
+=== PÁGINA 13 ===
+NTSN/B8 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+6.1.20 PIEZA DENTARIA AUSENTE
+
+Se registra un aspa de color azul acompañada de las siglas DNE, DEX o DAO en
+mayúscula y de color azul en el recuadro correspondiente al hallazgo clínico.
+
+DNE: Diente no erupcionado.
+DEX: Diente ausente por extracción debido a
+experiencia de lesiones de caries dental.
+
+DAO: Diente ausente por otras razones que
+no tienen relación a experiencia de lesión de
+
+caries dental. | | | | |
+
+6.1.21 PIEZA DENTARIA EN CLAVIJA
+
+24 25 26
+
+Se dibuja un triángulo de color azul por encima o debajo de las raices de la
+pieza dentaria que presenta esta característica clínica.
+
+6.1.22 PIEZA DENTARIA ECTÓPICA
+
+Se registra en mayúscula y de color azul la sigla "E" dentro del recuadro
+correspondiente a la pieza dentaria que presenta esta característica clínica.
+
+WN
+
+42 41 31 32
+
+ANO
+
+
+
+=== PÁGINA 14 ===
+NTSN*J88 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+5.2.23 PIEZA DENTARIA EN ERUPCIÓN
+
+Se dibuja sobre la gráfica de la pieza dentaria una flecha en zigzag de color azul,
+dirigida hacia el plano oclusal de la pieza dentaria que presenta esta característica
+clínica.
+
+23 24 25
+31 32 33
+
+6.1.24 PIEZA DENTARIA EXTRUIDA
+
+Se dibuja fuera del gráfico de la pieza dentaria una flecha recta vertical de color
+azul, dirigida en sentido externo en incisal u oclusal de la pieza dentaria que
+presenta esta característica clínica.
+
+A
+DER
+
+6.1.25 PIEZA DENTARIA INTRUIDA
+
+Se dibuja fuera del gráfico de la pieza dentaria, una flecha recta vertical de color
+azul, dirigida hacia la zona incisal u oclusal de la pieza que presenta esta
+característica clínica.
+
+J
+PWW
+
+42 11 21. 22
+
+
+=== PÁGINA 15 ===
+NTSNA4BB -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+6.1.26 PIEZA DENTARIA SUPERNUMERARIA
+Se registra en mayúscula y de color azul una circunferencia con la sigla “S"
+
+encerrada, localizada entre los ápices de las piezas dentarias adyacentes a la pieza
+supernumeraria.
+
+12 11 21 22
+
+6.1.27 PULPOTOMÍA
+
+Se dibuja la representación de la pulpa dentaria coronal de color azul si se
+encuentra en buen estado; de no ser así, se pinta de color rojo. En el recuadro
+correspondiente, se anota en mayúscula la sigla "PP" en letras de color azul (buen
+estado) o rojo (mal estado), acorde con el hallazgo clínico.
+
+XS 37]
+MS 23
+
+6.1.28 POSICIÓN ANORMAL DENTARIA
+
+Se registran en mayúscula y de color azul las siglas en los recuadros
+correspondientes a la pieza dentaria en que presenta la característica clínica
+mediante la siguiente nomenclatura:
+
+M: Mesializado.
+D: Distalizado.
+
+V: Vestibularizado. 26 27 28
+P: Palatinizado.
+L: Lingualizado.
+
+15
+
+
+=== PÁGINA 16 ===
+NTSNe 188 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+6.1.29 PRÓTESIS DENTAL PARCIAL FIJA
+
+Se dibuja una línea recta horizontal de color azul que indica la extensión del puente,
+con líneas verticales sobre los pilares. Es graficado a nivel de los ápices de las
+piezas dentarias comprometidas. Si la prótesis está en buen estado, se dibuja en
+color azul; y, de encontrarse en mal estado, se dibuja de color rojo.
+
+14 ¡LA 12 11 21 22 23 24
+
+Ad
+
+6.1.30 PRÓTESIS DENTAL COMPLETA SUPERIOR / INFERIOR
+
+Se dibujan 2 líneas rectas paralelas y horizontales a nivel de los ápices de las
+piezas dentarias del maxilar que presenta este tratamiento, ya sea el maxilar
+superior y/o el maxilar inferior. Si la prótesis está en buen estado, se dibuja de color
+azul; y, de estar en mal estado, se dibuja en color rojo.
+
+e”
+
+15 14 13 12 11 21 22 23 24
+
+EII AADOAA DA
+
+6.1.31 PRÓTESIS DENTAL PARCIAL REMOVIBLE
+
+Se dibujan en color azul 2 lineas horizontales paralelas a nivel de los ápices de las
+piezas dentarias reemplazadas. Si la prótesis está en buen estado, las lineas son
+de color azul, y si se encuentra en mal estado, las lineas son de color rojo.
+
+
+
+=== PÁGINA 17 ===
+NTSN*1BB -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+6.1.32 REMANENTE RADICULAR
+
+Se registra mayúscula y de color rojo la sigla “RR”, en el recuadro en el que se
+
+observe la caracteristica clínica.
+
+36 37 38
+
+6.1.33 RESTAURACIÓN DEFINITIVA
+
+Se dibuja la restauración acorde con la forma que se observa. Es totalmente
+pintada de color azul si se encuentra en buen estado; de no ser así, se pinta de
+color rojo. En el recuadro correspondiente, se anotan en mayúscula las siglas del
+material empleado, de color azul (buen estado) o rojo (mal estado), acorde con el
+hallazgo clínico.
+
+AM: Amalgama Dental.
+
+R: Resina. Iv
+IV: lonómero de Vidrio.
+
+IM: Incrustación Metálica 17 16 15
+IE: Incrustación Estética.
+
+6.1.34 RESTAURACIÓN TEMPORAL
+
+Se dibuja en rojo el contorno de la restauración siguiendo su forma en las
+superficies comprometidas.
+
+
+
+=== PÁGINA 18 ===
+NTS NA 8 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+6.1.35 SELLANTES
+
+Se dibuja el recorrido del sellante siguiendo la forma de las fosas y fisuras selladas.
+Colocar en mayúscula en el recuadro correspondiente la sigla del hallazgo clínico
+de color azul, de encontrarse en buen estado, o de color rojo, si está en mal estado.
+En caso se identifiqué lesión cariosa, se deben adicionar las siglas
+correspondientes al grafico según lo establecido en el numeral 6.1.16.
+
+Se registra en mayúsculas y en color rojo la sigla "DES" en el recuadro
+correspondiente a la pieza dentaria y se dibuja de color rojo en el gráfico de la pieza
+dentaria acorde al lugar donde se observa el hallazgo clínico.
+
+12 11 21 22
+
+6.1.36 SUPERFICIE DESGASTADA
+
+6.1.37 TRATAMIENTO DE CONDUCTO
+
+Se dibuja una línea recta vertical de color azul si se encuentra en buen estado; de
+no ser así, se pinta de color rojo. En el recuadro correspondiente, se anotan en
+mayúscula las siglas "TC" o "PC” en letras de color azul (buen estado) o rojo (mal
+estado), acorde con el hallazgo clínico.
+
+TC = Tratamiento de conductos.
+PC = Pulpectomia.
+
+Sólo se registra este tratamiento cuando se observan clínicamente los conos de
+gutapercha, la obturación de la cámara pulpar y/o conducto radicular.
+
+
+=== PÁGINA 19 ===
+NTSN1BÉ -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+A eN
+
+6.1.38 TRANSPOSICIÓN DENTARIA
+
+Se dibujan dos flechas curvas de color azul entrecruzadas, a la altura de los
+números de las piezas dentarias que presentan esta característica clínica,
+
+25 26 27
+
+6.2.1 PLANIFICACIÓN
+
+La realización del odontograma se desarrolla acorde con la atención por curso de
+vida de forma transversal.
+
+En los establecimientos de salud públicos, privados y mixtos, el gráfico del
+odontograma forma parte de la Ficha Odonto-Estomatológica o la que haga sus
+veces, según normativa vigente; debiéndose desarrollar en el momento en el que
+se lleva a cabo la evaluación oral.
+
+6.2.2 ENTRENAMIENTO
+
+El/la cirujano dentista que realiza el odontograma debe mantenerse en constante
+actualización con la finalidad de estar capacitado/a para el cumplimiento de la
+presente Norma Técnica de Salud.
+
+El contenido contemplado en la capacitación está enfocado en los siguientes
+aspectos: Identificación de caracteristicas clinicas estomatológicas, así como
+registro de procedimientos estomatológicos ya realizados.
+
+
+
+=== PÁGINA 20 ===
+NTS Ne 1BÍ -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+6.2.3 ORGANIZACIÓN E IMPLEMENTACIÓN
+
+En los establecimientos de salud privados, públicos y mixtos, el registro del
+odontograma está a cargo del/de la cirujano dentista y es responsabilidad de
+este/a. En caso que en el establecimiento de salud, no se cuente con un/a cirujano
+dentista, se refiere a un establecimiento de salud que cuente con dicho recurso
+humano.
+
+Es responsabilidad de los establecimientos de salud públicos, privados y mixtos
+contar con la Ficha Odonto-Estomatológica o la que haga sus veces (la cual
+contiene los gráficos del odontograma) para el uso por el/la cirujano dentista.
+
+6.2.4 SISTEMA DE INFORMACIÓN, MONITOREO Y SEGUIMIENTO
+
++ El registro, recojo, procesamiento y digitalización, ya sea mediante una
+historia clínica física o electrónica, se hace de acuerdo a la normativa vigente.
+
+e En el marco de la implementación progresiva de los sistemas de
+información, el odontograma electrónico debe cumplir los criterios que
+establece la presente Norma Técnica de Salud.
+
+e La información obtenida en la Ficha Odonto-Estomatológica o la que haga
+sus veces para el registro del odontograma debe ser acorde con lo dispuesto
+según la normativa vigente.
+
++ Enel marco de lo dispuesto en la NTS N” 139-MINSA/2018/DGAIN Norma
+Técnica de Salud para la Gestión de la Historia Clínica, aprobada por
+Resolución Ministerial N” 214-2018/MINSA o la que haga sus veces, la
+actualización e implementación progresiva de la Ficha Odonto-
+Estomatológica o la que haga sus veces es establecida según la normativa
+vigente.
+
+6.2.5 FINANCIAMIENTO
+
+Los establecimientos de salud públicos, privados y mixtos presupuestan las
+actividades referidas a lo dispuesto en la presente Norma Técnica de Salud, bajo
+las fuentes de financiamiento establecidas de acuerdo a las normativas que los
+rigen.
+
+VII. RESPONSABILIDADES
+
+Y 7.4 NIVEL NACIONAL
+
+El Ministerio de Salud, a través de la Dirección General de Intervenciones
+Estratégicas en Salud Pública (la Dirección de Salud Bucal), es responsable de la
+difusión de la presente Norma Técnica de Salud hasta el nivel regional, así como
+de brindar la asistencia técnica necesaria para implementarla y supervisar su
+cumplimiento.
+
+Las Direcciones de Redes Integradas de Salud (DIRIS), Direcciones Regionales
+de Salud (DIRESAs), Gerencias Regionales de Salud (GERESAs) o las que haga
+sus veces a nivel regional, son responsables de la difusión, asistencia técnica,
+
+20
+
+
+=== PÁGINA 21 ===
+NTSN*IBB -MINSAJDGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+implementación y supervisión de la aplicación de la presente Norma Técnica de
+Salud.
+
+7.3 NIVEL LOCAL
+Es responsabilidad de los establecimientos de salud públicos, privados y mixtos
+cumplir con lo dispuesto en la presente Norma Técnica de Salud. y contar con la
+Ficha Odonto-Estomatológica o la que haga sus veces según normativa vigente,
+que contiene el gráfico del odontograma para el uso del/de la cirujano dentista.
+Los/las cirujanos dentistas de las diferentes UPS son responsables de la
+implementación, aplicación y dar cumplimiento a lo dispuesto en la presente
+
+Norma Técnica de Salud; según corresponda.
+
+Vill. ANEXO
+
+— Anexo: Gráfico del odontograma.
+
+21
+
+
+=== PÁGINA 22 ===
+wise 188 -mNSsA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+ANEXO: GRÁFICO DEL ODONTOGRAMA
+
+ODONTOGRAMA
+
+18 17 16 15 14 13 12 11 21 22 23 24 25 26 27 28
+
+54 53 52 51 61 62 63 64 — 65
+
+ANO AAA
+PAIR
+
+85 84 83 82 81 71 72 73 74
+
+VAYA AENA DAMA
+
+48 47 46 45 44 43 42 41 31 32 33 M 35 36 37 38
+
+Especificaciones:
+
+Observaciones:
+
+Fuente; Dirección de Salud Bucal - Dirección General de intervenciones Estratégicas en Salud Pública
+
+22
+
+
+=== PÁGINA 23 ===
+NTSN* 188 -MINSA/DGIESP-2022
+NORMA TÉCNICA DE SALUD PARA EL USO DEL ODONTOGRAMA
+
+IX. BIBLIOGRAFÍA
+
+1) American Dental Association. Glossary of Dental Clinical and Administrative
+Terms 2019. Visitado 19 abril 2022, Disponible en:
+
+https: //www ada.org/publications/cdt/alossary-of-dental-clinical-terms
+
+R Ireland, C. A. Yeung. A Dictionary of Dentistry Oxford. 2* edition. Oxford
+University (2020)
+
+American Dental Association (ADA). Dental Procedures Codes (CDT). Edición
+2013. Publicado 2014,
+
+Abanto J, Imparato JCP, Guedes Pinto AC, Bónecker M. Anomalías dentarias
+de impacto estético en odontopediatria: caracteristicas y tratamiento. Rev
+Estomato!l Herediana. 2012; 22 (3): Pag 171 — 178.
+
+American Academy of Pediatric Dentistry. Guidelines for the Management of
+Traumatic Dental Injuries: 1. Fractures and Luxations of Permanent Teeth. 2013;
+38 (6): pág.16-17.
+
+2
+
+dl
+
+3
+
+—
+
+4
+
+e
+
+5
+
+a
+
+23
+
+
+=== PÁGINA 24 ===
+
+
+=== PÁGINA 25 ===
+MINISTERIO DE SALUD No2.27:.2022/hin SA
+
+Visto, el Expediente N” 21-019816-001, que contiene los Informes N* 01-2021-CSR-
+DSABU-DGIESP/MINSA, N* 04-2021-CSR-DSABU-DGIESP/MINSA, N* 05-2021-CSR-
+DSABU-DGIESP/MINSA y N* 09-2022-CSR-DSABU-DGIESP/MINSA, de la Dirección
+General de Intervenciones Estratégicas en Salud Pública, y los Informes N” 1695-2021-
+OGAJ/MINSA y N* 546-2022-OGAJ/MINSA, de la Oficina General de Asesoría Jurídica;
+
+CONSIDERANDO:
+
+Que, los numerales | y l| del Título Preliminar de la Ley N* 26842, Ley General de
+Salud, establecen que la salud es condición indispensable del desarrollo humano y medio
+fundamental para alcanzar el bienestar individual y colectivo, y que la protección de la salud
+es de interés público, siendo responsabilidad del Estado regularla, vigilarla y promoverla;
+
+Que, el numeral 1 del artículo 3 del Decreto Legislativo N* 1161, Ley de Organización
+y Funciones del Ministerio de Salud, señala como ámbito de competencia del Ministerio de
+Salud, la salud de las personas;
+
+Que, el articulo 4 del citado Decreto Legislativo dispone que el Sector Salud está
+conformado por el Ministerio de Salud, como organismo rector, las entidades adscritas a él
+y aquellas instituciones públicas y privadas de nivel nacional, regional y local, y personas
+naturales que realizan actividades vinculadas a las competencias establecidas en la Ley de
+Organización y Funciones del Ministerio de Salud y que tienen impacto directo o indirecto
+en la salud, individual o colectiva. Asimismo, el numeral 4-A1 del artículo 4-A del mencionado
+Decreto Legislativo, modificado por el Decreto Legislativo N” 1504, Decreto Legislativo que
+fortalece al Instituto Nacional de Salud para la prevención y control de las enfermedades, ha
+previsto que la potestad rectora del Ministerio de Salud comprende la facultad que tiene para
+normar, supervisar, fiscalizar y, cuando corresponda, sancionar, en los ámbitos que
+comprenden la materia de salud;
+
+Que, los literales b) y h) del artículo 5 del acotado Decreto Legislativo, modificado
+por Decreto Legislativo N” 1504, establecen que son funciones rectoras del Ministerio de
+Salud formular, planear, dirigir, coordinar, ejecutar, supervisar y evaluar la política nacional
+y sectorial de promoción de la salud, vigilancia, prevención y control de las enfermedades,
+recuperación, rehabilitación en salud, tecnologías en salud y buenas prácticas en salud, bajo
+su competencia, aplicable a todos los niveles de gobierno, así como dictar normas y
+lineamientos técnicos para la adecuada ejecución y supervisión de la politica nacional y
+políticas sectoriales de salud, entre otros;
+
+
+
+=== PÁGINA 26 ===
+Que, el artículo 63 del Reglamento de Organización y Funciones del Ministerio de
+Salud, aprobado por Decreto Supremo N* 008-2017-SA, modificado por Decreto Supremo
+N” 011-2017-SA, establece que la Dirección General de Intervenciones Estratégicas en
+Salud Pública es el órgano de linea del Ministerio de Salud, dependiente del Viceministerio
+de Salud Pública, competente para dirigir y coordinar las intervenciones estratégicas en
+Salud Pública en materia de salud bucal, entre otras;
+
+Que, en ese sentido, la Dirección General de Intervenciones Estratégicas en Salud
+Pública ha propuesto la actualización de la NTS N* 150-MINSA/2019/DGIESP, Norma
+Técnica de Salud para el Uso del Odontograma, aprobada por Resolución Ministerial N*
+272-2019/MINSA;
+
+Que, la Oficina General de Asesoría Juridica mediante los Informes N* 1695-2021-
+OGAJ/MINSA y N” 546-2022-OGAJ/MINSA, emite opinión legal, señalando que resulta
+legalmente procedente la expedición de la Resolución Ministerial que aprueba la Norma
+Técnica de Salud precitada;
+
+Estando a lo propuesto por la Dirección General de Intervenciones Estratégicas en
+Salud Pública;
+
+Con el visado del Director General de la Dirección General de Intervenciones
+Estratégicas en Salud Pública, de la Directora General de la Dirección General de
+Aseguramiento e Intercambio Prestacional, de la Directora General de la Dirección General
+de Operaciones en Salud, de la Directora General de la Dirección General de Personal de
+la Salud, del Director General (e) de la Oficina General de Asesoría Juridica, del Viceministro
+de Salud Pública y del Viceministro (e) de Prestaciones y Aseguramiento en Salud; y,
+
+De conformidad con lo dispuesto en el Decreto Legislativo N* 1161, Ley de
+Organización y Funciones del Ministerio de Salud, modificado por la Ley N” 30895, Ley que
+fortalece la función rectora del Ministerio de Salud y por el Decreto Legislativo N* 1504,
+Decreto Legislativo que fortalece al Instituto Nacional de Salud para la prevención y control
+de las enfermedades, y, el Reglamento de Organización y Funciones del Ministerio de Salud,
+aprobado por Decreto Supremo N* 008-2017-SA, modificado por los Decretos Supremos N*
+011-2017-SA y N* 032-2017-SA;
+
+SE RESUELVE:
+
+Artículo 1.- Aprobar la NTS N488 -MINSA/DGIESP-2022, Norma Técnica de Salud
+para el Uso del Odontograma, que como Anexo forma parte de la presente Resolución
+Ministerial.
+
+Artículo 2.- Derogar la Resolución Ministerial N* 272-2019/MINSA, que aprueba la
+NTS N” 150-MINSA/2019/DGIESP, Norma Técnica de Salud para el Uso del Odontograma,
+
+Artículo 3.- Encargar a la Oficina de Transparencia y Anticorrupción de la Secretaria
+General la publicación de la presente Resolución Ministerial y su Anexo en la sede digital
+del Ministerio de Salud,
+
+Registrese, comuniquese y publíquese.
+
+| ,
+NA .
+JORGE ANTONIO LOPEZ PENA
+inistro de Salud
+
+e sn

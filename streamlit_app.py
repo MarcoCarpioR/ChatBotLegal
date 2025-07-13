@@ -2,13 +2,12 @@ import streamlit as st
 import faiss
 import pickle
 import numpy as np
-from sentence_transformers import SentenceTransformer
 import google.generativeai as genai
 
-# Configurar Gemini con clave API
+# Configurar Gemini API
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
-# Cargar índice FAISS y metadatos
+# Cargar FAISS y metadatos
 @st.cache_resource
 def cargar_index_y_datos():
     index = faiss.read_index("index_normas.faiss")
@@ -16,33 +15,36 @@ def cargar_index_y_datos():
         data = pickle.load(f)
     return index, data["textos"], data["fuentes"]
 
-# Cargar modelo de embeddings local
+# Modelo generativo y de embedding (usando Gemini)
 @st.cache_resource
-def cargar_modelo_embeddings():
-    return SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+def cargar_modelos():
+    modelo_embed = genai.EmbeddingModel("models/embedding-001")
+    modelo_chat = genai.GenerativeModel("gemini-2.5-pro")
+    return modelo_embed, modelo_chat
 
-# Embedding de la pregunta
+# Embedding de texto
 def embed_text(modelo, texto):
-    embedding = modelo.encode([texto])
-    return np.array(embedding, dtype="float32").reshape(1, -1)
+    respuesta = modelo.embed_content(content=texto, task_type="RETRIEVAL_QUERY")
+    vector = respuesta["embedding"]
+    return np.array(vector, dtype="float32").reshape(1, -1)
 
-# Buscar fragmentos relevantes
-def buscar_contexto(pregunta, modelo, index, textos, fuentes, k=1):
-    vector = embed_text(modelo, pregunta)
+# Buscar fragmentos más similares
+def buscar_contexto(pregunta, modelo_embed, index, textos, fuentes, k=1):
+    vector = embed_text(modelo_embed, pregunta)
     distancias, indices = index.search(vector, k)
     resultados = [(textos[i], fuentes[i]) for i in indices[0]]
     return resultados
 
 # Interfaz de usuario
 st.title("🦷 ChatClínica Legal")
-st.markdown("Asistente legal para habilitación de consultorios odontológicos en Perú.")
+st.markdown("Consulta sobre habilitación de consultorios odontológicos en Perú.")
 
 pregunta = st.text_input("🔍 Escribe tu pregunta legal:")
 
 if pregunta:
     with st.spinner("Buscando normativa relevante..."):
         index, textos, fuentes = cargar_index_y_datos()
-        modelo_embed = cargar_modelo_embeddings()
+        modelo_embed, modelo_chat = cargar_modelos()
 
         fragmentos = buscar_contexto(pregunta, modelo_embed, index, textos, fuentes, k=1)
         contexto, fuente = fragmentos[0]
@@ -59,7 +61,6 @@ Pregunta: {pregunta}
 Respuesta:
 """
 
-        modelo_chat = genai.GenerativeModel("gemini-2.5-pro")
         respuesta = modelo_chat.generate_content(prompt).text.strip()
 
     st.success("✅ Respuesta:")

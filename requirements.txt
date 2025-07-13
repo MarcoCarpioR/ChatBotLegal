@@ -3,3 +3,5 @@ faiss-cpu
 sentence-transformers
 google-generativeai
 numpy
+
+

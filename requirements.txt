@@ -1,6 +1,5 @@
+vertexai
+google-cloud-aiplatform
 streamlit
 faiss-cpu
 numpy
-google-cloud-aiplatform
-google-auth
-

@@ -6,7 +6,7 @@ from google.cloud import aiplatform
 from vertexai.preview.language_models import TextEmbeddingModel
 from vertexai.generative_models import GenerativeModel
 
-# Inicializar Vertex AI
+# Inicializar Vertex AI solo una vez
 aiplatform.init(
     project=st.secrets["GCP_PROJECT"],
     location=st.secrets["GCP_REGION"]
@@ -23,16 +23,17 @@ def cargar_index_y_datos():
 # Cargar modelos Gemini desde Vertex AI
 @st.cache_resource
 def cargar_modelos():
-    modelo_embed = TextEmbeddingModel.from_pretrained("gemini-embedding-001")
-    modelo_chat = GenerativeModel("gemini-2.5-pro")
-    return modelo_embed, modelo_chat
+    embed_model = TextEmbeddingModel.from_pretrained("textembedding-gecko@001")
+    chat_model = GenerativeModel("gemini-2.5-pro")
+    return embed_model, chat_model
 
-# Obtener embedding
+# Obtener embedding de una pregunta
 def embed_text(modelo, texto):
-    vector = modelo.get_embeddings([texto])[0].values
+    embedding_response = modelo.get_embeddings([texto])
+    vector = embedding_response[0].values
     return np.array(vector, dtype="float32").reshape(1, -1)
 
-# Buscar fragmento más cercano
+# Buscar fragmentos más relevantes en el índice FAISS
 def buscar_contexto(pregunta, modelo_embed, index, textos, fuentes, k=1):
     vector = embed_text(modelo_embed, pregunta)
     distancias, indices = index.search(vector, k)
@@ -46,7 +47,7 @@ st.markdown("Consulta normativa legal para habilitación de consultorios odontol
 pregunta = st.text_input("🔍 Escribe tu pregunta legal:")
 
 if pregunta:
-    with st.spinner("Buscando normativa..."):
+    with st.spinner("Buscando normativa relevante..."):
         index, textos, fuentes = cargar_index_y_datos()
         modelo_embed, modelo_chat = cargar_modelos()
 

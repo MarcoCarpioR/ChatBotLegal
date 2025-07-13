@@ -18,7 +18,7 @@ def cargar_index_y_datos():
 # Obtener embedding desde Gemini
 @st.cache_resource
 def cargar_modelo_embeddings():
-    modelo = genai.GenerativeModel("embedding-001")
+    modelo = genai.EmbeddingModel("models/embedding-001")
     return modelo
 
 # Generar respuesta con Gemini Pro

@@ -2,10 +2,15 @@ import streamlit as st
 import faiss
 import pickle
 import numpy as np
-import google.generativeai as genai
+from google.cloud import aiplatform
+from vertexai.preview.language_models import TextEmbeddingModel
+from vertexai.generative_models import GenerativeModel
 
-# Configurar Gemini API
-genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+# Inicializar Vertex AI
+aiplatform.init(
+    project=st.secrets["GCP_PROJECT"],
+    location=st.secrets["GCP_REGION"]
+)
 
 # Cargar FAISS y metadatos
 @st.cache_resource
@@ -15,34 +20,33 @@ def cargar_index_y_datos():
         data = pickle.load(f)
     return index, data["textos"], data["fuentes"]
 
-# Modelo generativo y de embedding (usando Gemini)
+# Cargar modelos Gemini desde Vertex AI
 @st.cache_resource
 def cargar_modelos():
-    modelo_embed = genai.EmbeddingModel("models/embedding-001")
-    modelo_chat = genai.GenerativeModel("gemini-2.5-pro")
+    modelo_embed = TextEmbeddingModel.from_pretrained("gemini-embedding-001")
+    modelo_chat = GenerativeModel("gemini-2.5-pro")
     return modelo_embed, modelo_chat
 
-# Embedding de texto
+# Obtener embedding
 def embed_text(modelo, texto):
-    respuesta = modelo.embed_content(content=texto, task_type="RETRIEVAL_QUERY")
-    vector = respuesta["embedding"]
+    vector = modelo.get_embeddings([texto])[0].values
     return np.array(vector, dtype="float32").reshape(1, -1)
 
-# Buscar fragmentos más similares
+# Buscar fragmento más cercano
 def buscar_contexto(pregunta, modelo_embed, index, textos, fuentes, k=1):
     vector = embed_text(modelo_embed, pregunta)
     distancias, indices = index.search(vector, k)
     resultados = [(textos[i], fuentes[i]) for i in indices[0]]
     return resultados
 
-# Interfaz de usuario
+# Interfaz Streamlit
 st.title("🦷 ChatClínica Legal")
-st.markdown("Consulta sobre habilitación de consultorios odontológicos en Perú.")
+st.markdown("Consulta normativa legal para habilitación de consultorios odontológicos en Perú.")
 
 pregunta = st.text_input("🔍 Escribe tu pregunta legal:")
 
 if pregunta:
-    with st.spinner("Buscando normativa relevante..."):
+    with st.spinner("Buscando normativa..."):
         index, textos, fuentes = cargar_index_y_datos()
         modelo_embed, modelo_chat = cargar_modelos()
 
@@ -50,8 +54,8 @@ if pregunta:
         contexto, fuente = fragmentos[0]
 
         prompt = f"""
-Eres un asistente legal especializado en consultorios odontológicos en Perú.
-Responde con claridad y precisión legal en base al siguiente fragmento normativo:
+Eres un asistente legal para consultorios odontológicos en Perú.
+Responde la siguiente consulta en base a la normativa entregada.
 
 --- CONTEXTO ---
 {contexto}

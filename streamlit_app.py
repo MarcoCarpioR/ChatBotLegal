@@ -1,25 +1,15 @@
-import os
 import streamlit as st
 import faiss
 import pickle
 import numpy as np
 from google.cloud import aiplatform
-from google.oauth2 import service_account
-from vertexai.preview.language_models import TextEmbeddingModel
 from vertexai.generative_models import GenerativeModel
-
-# Autenticación con cuenta de servicio desde secrets
-SERVICE_ACCOUNT_INFO = st.secrets["gcp_service_account"]
-credentials = service_account.Credentials.from_service_account_info(SERVICE_ACCOUNT_INFO)
+from vertexai.preview.language_models import TextEmbeddingModel
 
 # Inicializar Vertex AI
-aiplatform.init(
-    project=st.secrets["GCP_PROJECT"],
-    location=st.secrets["GCP_REGION"],
-    credentials=credentials
-)
+aiplatform.init(project="chatclinica", location="us-central1")
 
-# Cargar FAISS y metadatos
+# Cargar índice FAISS y metadatos
 @st.cache_resource
 def cargar_index_y_datos():
     index = faiss.read_index("index_normas.faiss")
@@ -27,10 +17,10 @@ def cargar_index_y_datos():
         data = pickle.load(f)
     return index, data["textos"], data["fuentes"]
 
-# Cargar modelos
+# Cargar modelos Gemini
 @st.cache_resource
 def cargar_modelos():
-    modelo_embed = TextEmbeddingModel.from_pretrained("textembedding-gecko@001")
+    modelo_embed = TextEmbeddingModel.from_pretrained("gemini-embedding-001")
     modelo_chat = GenerativeModel("gemini-2.5-pro")
     return modelo_embed, modelo_chat
 
@@ -39,28 +29,27 @@ def embed_text(modelo, texto):
     embedding = modelo.get_embeddings([texto])[0].values
     return np.array(embedding, dtype="float32").reshape(1, -1)
 
-# Buscar contexto
+# Buscar contexto más relevante
 def buscar_contexto(pregunta, modelo_embed, index, textos, fuentes, k=1):
     vector = embed_text(modelo_embed, pregunta)
     distancias, indices = index.search(vector, k)
     resultados = [(textos[i], fuentes[i]) for i in indices[0]]
     return resultados
 
-# Interfaz
-st.title("🦷 ChatClínica Legal")
-st.markdown("Consulta normativa legal para habilitación de consultorios odontológicos en Perú.")
+# Interfaz de Streamlit
+st.set_page_config(page_title="ChatClínica Legal", page_icon="⚖️")
+st.title("🧠 Chatbot Legal para Consultorios Odontológicos")
 
-pregunta = st.text_input("🔍 Escribe tu pregunta legal:")
+pregunta = st.text_input("Escribe tu pregunta legal:", "")
 
 if pregunta:
-    with st.spinner("Buscando normativa relevante..."):
-        index, textos, fuentes = cargar_index_y_datos()
-        modelo_embed, modelo_chat = cargar_modelos()
+    index, textos, fuentes = cargar_index_y_datos()
+    modelo_embed, modelo_chat = cargar_modelos()
 
-        fragmentos = buscar_contexto(pregunta, modelo_embed, index, textos, fuentes, k=1)
-        contexto, fuente = fragmentos[0]
+    fragmentos = buscar_contexto(pregunta, modelo_embed, index, textos, fuentes)
+    contexto, fuente = fragmentos[0]
 
-        prompt = f"""
+    prompt = f"""
 Eres un asistente legal para consultorios odontológicos en Perú.
 Responde la siguiente consulta en base a la normativa entregada.
 
@@ -71,12 +60,10 @@ Responde la siguiente consulta en base a la normativa entregada.
 Pregunta: {pregunta}
 Respuesta:
 """
-
+    with st.spinner("Pensando..."):
         respuesta = modelo_chat.generate_content(prompt).text.strip()
 
-    st.success("✅ Respuesta:")
+    st.markdown("### 🤖 Respuesta:")
     st.write(respuesta)
-    st.info(f"📁 Fuente: {fuente}")
 
-    with st.expander("📄 Fragmento normativo usado"):
-        st.code(contexto)
+    st.markdown(f"📁 **Fuente**: {fuente}")

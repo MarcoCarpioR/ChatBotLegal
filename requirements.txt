@@ -1,8 +1,8 @@
 # Interfaz Web
 streamlit==1.35.0
 
-# Google Cloud y Vertex AI
-google-cloud-aiplatform==1.38.1
+# Vertex AI y dependencias compatibles
+google-cloud-aiplatform==1.47.0
 vertexai==1.47.0
 
 # FAISS para búsquedas vectoriales
@@ -12,7 +12,7 @@ faiss-cpu==1.7.4
 numpy==1.26.4
 pickle5==0.0.11
 
-# Autenticación segura y compatibilidad
+# Autenticación segura
 google-auth==2.29.0
 google-auth-oauthlib==1.2.0
 google-api-core==2.19.0

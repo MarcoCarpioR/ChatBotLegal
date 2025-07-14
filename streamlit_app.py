@@ -1,33 +1,25 @@
-import streamlit as st
 import os
-import json
+import streamlit as st
 import faiss
 import pickle
 import numpy as np
-
-# ────────────────────────
-# 1. CARGAR CREDENCIALES GCP
-# ────────────────────────
-with open("gcp_key.json", "w") as f:
-    json.dump(json.loads(st.secrets["GOOGLE_CREDENTIALS_JSON"]), f)
-
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp_key.json"
-
-# ────────────────────────
-# 2. IMPORTAR MODELOS DE VERTEX AI
-# ────────────────────────
 from google.cloud import aiplatform
-from vertexai.generative_models import GenerativeModel
+from google.oauth2 import service_account
 from vertexai.preview.language_models import TextEmbeddingModel
+from vertexai.generative_models import GenerativeModel
 
+# Autenticación con cuenta de servicio desde secrets
+SERVICE_ACCOUNT_INFO = st.secrets["gcp_service_account"]
+credentials = service_account.Credentials.from_service_account_info(SERVICE_ACCOUNT_INFO)
+
+# Inicializar Vertex AI
 aiplatform.init(
     project=st.secrets["GCP_PROJECT"],
-    location=st.secrets["GCP_REGION"]
+    location=st.secrets["GCP_REGION"],
+    credentials=credentials
 )
 
-# ────────────────────────
-# 3. CARGAR FAISS + METADATOS
-# ────────────────────────
+# Cargar FAISS y metadatos
 @st.cache_resource
 def cargar_index_y_datos():
     index = faiss.read_index("index_normas.faiss")
@@ -35,33 +27,28 @@ def cargar_index_y_datos():
         data = pickle.load(f)
     return index, data["textos"], data["fuentes"]
 
-# ────────────────────────
-# 4. CARGAR MODELOS GEMINI
-# ────────────────────────
+# Cargar modelos
 @st.cache_resource
 def cargar_modelos():
-    embed_model = TextEmbeddingModel.from_pretrained("textembedding-gecko@001")
-    chat_model = GenerativeModel("gemini-2.5-pro")
-    return embed_model, chat_model
+    modelo_embed = TextEmbeddingModel.from_pretrained("textembedding-gecko@001")
+    modelo_chat = GenerativeModel("gemini-2.5-pro")
+    return modelo_embed, modelo_chat
 
-# ────────────────────────
-# 5. FUNCIONES DE CONSULTA
-# ────────────────────────
+# Obtener embedding
 def embed_text(modelo, texto):
-    vector = modelo.get_embeddings([texto])[0].values
-    return np.array(vector, dtype="float32").reshape(1, -1)
+    embedding = modelo.get_embeddings([texto])[0].values
+    return np.array(embedding, dtype="float32").reshape(1, -1)
 
+# Buscar contexto
 def buscar_contexto(pregunta, modelo_embed, index, textos, fuentes, k=1):
     vector = embed_text(modelo_embed, pregunta)
     distancias, indices = index.search(vector, k)
     resultados = [(textos[i], fuentes[i]) for i in indices[0]]
     return resultados
 
-# ────────────────────────
-# 6. UI STREAMLIT
-# ────────────────────────
+# Interfaz
 st.title("🦷 ChatClínica Legal")
-st.markdown("Consulta normativa para habilitación de consultorios odontológicos en Perú.")
+st.markdown("Consulta normativa legal para habilitación de consultorios odontológicos en Perú.")
 
 pregunta = st.text_input("🔍 Escribe tu pregunta legal:")
 
